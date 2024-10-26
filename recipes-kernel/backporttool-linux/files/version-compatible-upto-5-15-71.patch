@@ -1,0 +1,14 @@
+diff --git a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/sdio.h b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/sdio.h
+index b91afdf..75bd459 100644
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/sdio.h
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/sdio.h
+@@ -10,7 +10,8 @@
+ #include <linux/firmware.h>
+ #include "firmware.h"
+ 
+-#if (LINUX_VERSION_CODE <= KERNEL_VERSION(5, 15, 58))
++
++#if (LINUX_VERSION_CODE <= KERNEL_VERSION(5, 15, 71))
+ #if (LINUX_VERSION_CODE >= KERNEL_VERSION(4, 11, 0))
+ #include <uapi/linux/sched/types.h>
+ #endif /* kernel 4.11.0 */
